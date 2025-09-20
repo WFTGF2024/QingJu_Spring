@@ -1,0 +1,24 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    template:
+      mandatory: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 50
+        concurrency: 2
+        max-concurrency: 8
+
+app:
+  mq:
+    exchange: order.events
+    routingKey: order.created
+    queue: order.created.q
+    dlx: order.dlx
+    dlq: order.created.dlq
