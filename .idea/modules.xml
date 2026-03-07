@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QingJu_Spring.main.iml" filepath="$PROJECT_DIR$/.idea/modules/QingJu_Spring.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/QingJu_Spring.iml" filepath="$PROJECT_DIR$/.idea/QingJu_Spring.iml" />
     </modules>
   </component>
 </project>
